@@ -1,8 +1,11 @@
 # aichat-backend
 
-This is the backend service which contains 2 APIs for company ABC celebration campaign voucher giving
+This is the backend service which contains 2 APIs for company ABC celebration campaign voucher giving.
+This is only executable on linux/macbook (sorry).
 
-## Prerequisite : **_Docker_**
+## Prerequisite :
+1. **_Install Docker_**
+2. **_Install Node (v12 at least)**
 
 ## Running the service locally
 
@@ -12,7 +15,7 @@ This is the backend service which contains 2 APIs for company ABC celebration ca
 
 2. Run with docker
 
-> `npm run start`
+> `npm run start:fresh`
 
 3. View service logs to check whether the service started
 
