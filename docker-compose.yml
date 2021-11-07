@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+  aichat:
+    container_name: aichat
+    depends_on:
+      - "database"
+    build: .
+    ports:
+      - "${PORT}:${PORT}"
+    volumes:
+      - .:/service
+      - /service/node_modules
+
+  database:
+    container_name: aichat_db
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=aichat
+      - TZ=Asia/Singapore
+    ports:
+      - "3306:3306"

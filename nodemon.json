@@ -1,0 +1,7 @@
+{
+  "exec": "ts-node src/index.ts",
+  "watch": ["src/", ".env"],
+  "ext": ".ts, .env, .js, .css",
+  "ignore": ["src/routes.ts"],
+  "delay": 1000
+}
