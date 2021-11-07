@@ -24,7 +24,7 @@ export namespace Errors {
 
 	export class GenericError extends CustomError {
 		public httpStatusCode: 500 = 500;
-		public message = "ERR05: Server Generic Error";
+		public message = "ERR05: Server Generic Error.";
 	}
 
 	export const VoucherTaken = new VoucherTakenError();
